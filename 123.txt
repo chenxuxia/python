@@ -2,8 +2,4 @@
 
 dev is good
 
-<<<<<<< HEAD
 feature1
-=======
-feature1
->>>>>>> feature1
