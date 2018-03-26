@@ -1,9 +1,6 @@
 
-def my_abs(x):
-    if x>=0:
-        print(x)
-    else:
-        print(-x)
-
-b=input('请输入数字：')
-my_abs(int(b))
+s1=set([1,1,2,2,3,3])
+print(s1)
+s2=set([2,3,4])
+print(s1&s2)
+print(s1|s2)
