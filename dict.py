@@ -1,5 +1,8 @@
-s1=set([1,1,2,2,3,3])
-print(s1)
-s2=set([2,3,4])
-print(s1&s2)
-print(s1|s2)
+
+d={
+    'mic':95,
+    'bod':80,
+    'trca':75
+}
+print('d[\'mic\']',d['mic'])
+print('d.get(\'tom\',-1)=',d.get('tom',-1))
