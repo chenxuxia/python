@@ -32,7 +32,7 @@ for ul in soup.find_all('ul'):
 print(type(soup.find_all('ul')[0]))
 
 
-print(soup.find_all(attrs={'class': 'element'}))#attrs
+print(soup.find_all(attrs={'class_': 'element'}))#attrs 可以传入字典的方式来查找标签, 因为class在python中是特殊的字段
 print(soup.find_all(attrs={'id': 'list-1'})) 
 
 
