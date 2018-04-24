@@ -22,7 +22,7 @@ html = """
 soup = BeautifulSoup(html,'lxml')
 
 
-
+'''
 print(soup.a.next_sibling )#获取下一个兄弟标签
 print(soup.a.previous_sinbling) #获取上一个兄弟标签
 print(soup.a.next_siblings) #获取后面的兄弟节点
@@ -34,7 +34,7 @@ print(soup.descendants) #获取子孙节点，结果是一个迭代对象，而�
 for i,child in enumerate(soup.descendants):
     print(i,child)
 
-print(soup.p.children) #获取子节点，结果是一个迭代对象，而不是列表，只能通过循环的方式获取素有的信息
+print(soup.p.children) #获取子节点，结果是一个迭代对象，而不是列表，只能通过循环的方式获取所有的信息
 for i,child in enumerate(soup.p.children):
     print(i,child)
 
@@ -52,7 +52,6 @@ print(soup.title)
 print(soup.title.name)
 print(soup.title.string)
 print(soup.title.parent.name)
-print(soup.p)
 print(soup.p["class"])
 print(soup.a)
 print(soup.find(id='link3'))
@@ -62,6 +61,8 @@ for link in soup.find_all('a'):
     print(link.get('href'))
 
 print(soup.get_text())
-
+'''
+print(soup.title)
+print(soup.title.name)
 
 
